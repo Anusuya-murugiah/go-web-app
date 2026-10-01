@@ -19,7 +19,7 @@ FROM gcr.io/distroless/base
 COPY --from=base /app/main .
 
 COPY --from=base /app/static ./static
-#exposing
+
 EXPOSE 8080
 
 CMD  [ "./main" ]
