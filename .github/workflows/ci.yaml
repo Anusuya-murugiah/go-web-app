@@ -21,6 +21,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: check the path 
+      run: pwd && ls 
+      
     - name: Set up Go 1.22
       uses: actions/setup-go@v2
       with:
